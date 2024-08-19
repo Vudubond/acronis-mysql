@@ -82,6 +82,7 @@ $mysqldump_bin --defaults-extra-file=$DIR/conf/my_extra.cnf \
 --socket=/tmp_mysql/mysql.sock \
 --triggers \
 --routines \
+--force \
 --events $database > /tmp_mysql/$database.sql
 
 echo "###################";
